@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS - Check</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <main>
+        <input id="flipped" type="checkbox" name="flipped">
+        <label for="flipped">Clique para ver o verso</label>
+        <br>
+        <form class="check">
+            <div class="check__front">
+                <div class="check__person">
+                    <address class="check__address">
+                        <strong>
+                            Rua Colombia
+                        </strong><br>
+                        xx Vila Brasilia<br>
+                        São Carlos, SP 13566-630
+                    </address>
+                </div>
+                <div class="check__date">
+                    <input class="check__input" id="date" type="text" name="date">
+                    <label class="check__label" for="date">
+                        <small>Date</small>
+                    </label>
+                </div>
+                <div class="check__no">
+                    <span>1234</span>
+                    <small>12-345/6789 12345</small>
+                </div>
+                <label class="check__label check__order-of" for="order-of">Pay to the Order of</label>
+                <input class="check__input" id="order-of" type="text" name="order_of">
+                <label class="check__label check__currency" for="amount">$</label>
+                <input class="check__input" id="amount" type="number" name="amount" step="0.01" min="0">
+                <input class="check__input" id="amount-in-words" type="text" name="amount_in_words" maxlength="99">
+                <label class="check__label check__currency-name" for="amount-in-words">Dollars</label>
+                <svg class="check__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" aria-label="Camera" role="img">
+                    <path d="M 352 277.333 C 352 330.352 309.019 373.333 256 373.333 C 202.981 373.333 160 330.352 160 277.333 C 160 224.314 202.981 181.333 256 181.333 C 309.019 181.333 352 224.314 352 277.333 Z M 236 338.044 C 236 349.09 244.954 358.044 256 358.044 C 267.046 358.044 276 349.09 276 338.044 L 276 274.649 C 287.956 267.732 296 254.805 296 240 C 296 217.909 278.091 200 256 200 C 233.909 200 216 217.909 216 240 C 216 254.805 224.044 267.732 236 274.649 Z" />
+                    <path d="M 512.001 149.333 L 512.001 426.666 C 512.001 450.198 492.865 469.333 469.334 469.333 L 42.667 469.333 C 19.135 469.333 0 450.197 0 426.666 L 0 149.333 C 0 125.802 19.135 106.667 42.667 106.667 L 110.323 106.667 C 118.875 106.667 126.906 103.334 132.958 97.292 L 171.958 58.292 C 182.031 48.219 195.427 42.667 209.677 42.667 L 302.323 42.667 C 316.573 42.667 329.969 48.219 340.042 58.292 L 379.042 97.292 C 385.094 103.334 393.125 106.667 401.677 106.667 L 469.333 106.667 C 492.865 106.667 512 125.802 512.001 149.333 Z M 384 277.333 C 384 206.75 326.583 149.333 256 149.333 C 185.417 149.333 128 206.75 128 277.333 C 128 347.916 185.417 405.333 256 405.333 C 326.583 405.333 384 347.916 384 277.333 Z M 456 130 C 439.431 130 426 143.431 426 160 C 426 176.569 439.431 190 456 190 C 472.569 190 486 176.569 486 160 C 486 143.431 472.569 130 456 130 Z" />
+                </svg>
+                <div class="check_photo">
+                    <strong>Photo<br>
+                        Safe<br>
+                        Deposit<br>&reg;
+                    </strong>
+                    <br>Details on back
+                </div>
+                <div class="check__logo">
+                    <small aria-label="Maick Bank">Maick Bank</small>
+                </div>
+                <div class="check__payable">payable through<br>Maick Bank, N.A.</div>
+                <label class="check__label check__memo" for="memo">For</label>
+                <input class="check__input" id="memo" type="text" name="memo">
+                <label class="check__label check__signature" for="signature">Signature</label>
+                <input class="check__input" id="signature" type="text" name="signature">
+                <div class="check__mp">
+                    <strong>Ass</strong>
+                </div>
+                <div class="check__routing-no"><code>987654321</code></div>
+                <div class="check__account-no"><code>123457890</code></div>
+                <div class="check__bottom-no"><code>1234</code></div>
+                <div class="check__manufacturer">Security</div>
+            </div>
+            <div class="check__back">
+                <div class="check__info">
+                    <p><code>987654321</code><br>
+                    <code>123457890</code></p>
+                    <div class="check__back-no"><code>1234</code></div>
+                    <div class="check__back-person">Maick Henrique Santos</div>
+                    <div class="check__alter-area">
+                        <div class="check__alter-area-head"><small>Alter Area</small></div>
+                        <div class="check__alter-area-body">
+                            <div class="check__alter-area-border"></div>
+                            <strong>Maick Bank&nbsp;&nbsp;Maick Bank&nbsp;&nbsp;Maick Bank&nbsp;&nbsp;Maick Bank&nbsp;&nbsp;Maick Bank&nbsp;&nbsp;Maick Bank</strong>
+                        </div>
+                    </div>
+                    <div class="check__features">
+                        <strong>Security Features exceed industry standards and include:</strong>
+                        <ul class="check__features-list">
+                            <li>ImageMatch&reg;: Matching account and check number <br>on back <small>(Patent No. 9,240,088)</small></li>
+                            <li>MobileMark&reg;: Mobile Deposit check mark to indicate <br>check has been deposited via mobile device</li>
+                            <li>The Security Weave&reg; pattern on back designed to deter fraud</li>
+                            <li>Microprint (MP) lines printed on front and back</li>
+                            <li>The words <q>ORIGINAL DOCUMENT</q> across the back</li>
+                            <li>Photo Safe Deposit&reg; icon visible on front and back</li>
+                        </ul>
+                        <strong>Do not cash if:</strong>
+                        <ul class="check__features-list">
+                            <li>Any of the features listed aboce are missing or appear altered</li>
+                            <li>Fugitive Ink on back looks pink or has disappeared in Alter Area</li>
+                            <li>Brown stains or colored spots appear on both front and back</li>
+                        </ul>
+                    </div>
+                    <div class="check__icons">
+                        <svg class="check__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" aria-label="IJQ" role="img">
+                            <path d="M 436 256 C 436 355.411 355.411 436 256 436 C 156.589 436 76 355.411 76 256 C 76 156.589 156.589 76 256 76 C 355.411 76 436 156.589 436 256 Z M 106.576 159.69 L 106.576 336 L 142.176 336 L 142.176 159.69 Z M 210.591 308.87 C 200.337 308.87 195.211 300.557 195.211 283.93 L 159.491 283.93 C 159.491 301.043 163.971 314.403 172.931 324.01 C 181.891 333.617 194.444 338.42 210.591 338.42 C 225.611 338.42 237.881 333.253 247.401 322.92 C 256.927 312.587 261.691 298.863 261.691 281.75 L 261.691 159.69 L 226.091 159.69 L 226.091 280.05 C 226.091 299.263 220.924 308.87 210.591 308.87 Z M 392.106 176.88 C 380.806 163.807 365.426 157.27 345.966 157.27 C 326.026 157.27 310.446 164.07 299.226 177.67 C 288.006 191.27 282.396 210.18 282.396 234.4 L 282.396 262.01 C 282.476 285.91 288.146 304.62 299.406 318.14 C 310.666 331.66 326.266 338.42 346.206 338.42 L 355.536 337.82 L 387.986 367.48 L 410.386 346.9 L 386.046 325.1 C 401.792 311.86 409.666 290.67 409.666 261.53 L 409.666 231.98 C 409.259 208.327 403.406 189.96 392.106 176.88 Z M 366.976 297.31 C 362.416 304.937 355.492 308.75 346.206 308.75 C 336.686 308.75 329.602 304.917 324.956 297.25 C 320.316 289.583 317.996 277.677 317.996 261.53 L 317.996 232.34 C 318.156 217.087 320.496 205.727 325.016 198.26 C 329.536 190.787 336.519 187.05 345.966 187.05 C 355.412 187.05 362.436 190.887 367.036 198.56 C 371.642 206.227 373.946 218.093 373.946 234.16 L 373.946 262.37 C 373.859 278.037 371.536 289.683 366.976 297.31 Z" />
+                        </svg>
+                        <svg class="check__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" aria-label="Camera" role="img">
+                            <path d="M 352 277.333 C 352 330.352 309.019 373.333 256 373.333 C 202.981 373.333 160 330.352 160 277.333 C 160 224.314 202.981 181.333 256 181.333 C 309.019 181.333 352 224.314 352 277.333 Z M 236 338.044 C 236 349.09 244.954 358.044 256 358.044 C 267.046 358.044 276 349.09 276 338.044 L 276 274.649 C 287.956 267.732 296 254.805 296 240 C 296 217.909 278.091 200 256 200 C 233.909 200 216 217.909 216 240 C 216 254.805 224.044 267.732 236 274.649 Z" />
+                            <path d="M 512.001 149.333 L 512.001 426.666 C 512.001 450.198 492.865 469.333 469.334 469.333 L 42.667 469.333 C 19.135 469.333 0 450.197 0 426.666 L 0 149.333 C 0 125.802 19.135 106.667 42.667 106.667 L 110.323 106.667 C 118.875 106.667 126.906 103.334 132.958 97.292 L 171.958 58.292 C 182.031 48.219 195.427 42.667 209.677 42.667 L 302.323 42.667 C 316.573 42.667 329.969 48.219 340.042 58.292 L 379.042 97.292 C 385.094 103.334 393.125 106.667 401.677 106.667 L 469.333 106.667 C 492.865 106.667 512 125.802 512.001 149.333 Z M 384 277.333 C 384 206.75 326.583 149.333 256 149.333 C 185.417 149.333 128 206.75 128 277.333 C 128 347.916 185.417 405.333 256 405.333 C 326.583 405.333 384 347.916 384 277.333 Z M 456 130 C 439.431 130 426 143.431 426 160 C 426 176.569 439.431 190 456 190 C 472.569 190 486 176.569 486 160 C 486 143.431 472.569 130 456 130 Z" />
+                        </svg>
+                        <div class="check__photo">
+                            <strong>Photo<br>Safe<br>Deposit&reg;</strong>
+                        </div>
+                        <svg class="check__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 512 512" aria-label="Circle" role="img">
+                            <circle cx="256" cy="256" r="240"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="check__watermarks">
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__watermark">Original Document</div>
+                    <div class="check__side-watermark">OriginalDocumentOriginalDocumentOriginalDocument</div>
+                </div>
+                <div class="check__deposit">
+                    <div class="check__deposit-box">
+                        <label class="check__label" for="endorsement"><small><strong>Endorse Here</strong></small></label>
+                        <strong class="check__sign-here">Ass</strong><input class="check__input check__endorsement" id="endorsement" type="text" name="endorsement">
+                        <label class="check__label check__signature" for="institution">Institution</label>
+                        <input class="check__input check__institution" id="institution" type="text" name="institution">
+                        <label class="check__label"><input class="check__input" type="checkbox" name="mobile_deposit"><small>Check box for mobile/remote deposit</small></label>
+                        <div class="check__deposit-tip">
+                            <small>Write name of financial institution on line above</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
